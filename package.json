@@ -17,7 +17,8 @@
   "files": [
     "src",
     "dist",
-    "README.md"
+    "README.md",
+    "lib"
   ],
   "dependencies": {
     "class-autobind": "^0.1.4",

@@ -2,14 +2,14 @@
  * We inherit the height of the container by default
  */
 
-.DraftEditor-root,
-.DraftEditor-editorContainer,
-.public-DraftEditor-content {
+.react-rte .DraftEditor-root,
+.react-rte .DraftEditor-editorContainer,
+.react-rte .public-DraftEditor-content {
   height: inherit;
   text-align: initial;
 }
 
-.DraftEditor-root {
+.react-rte .DraftEditor-root {
   position: relative;
 }
 
@@ -18,7 +18,7 @@
  * fall through to the placeholder.
  */
 
-.DraftEditor-editorContainer {
+.react-rte .DraftEditor-editorContainer {
   background-color: rgba(255, 255, 255, 0);
   /* Repair mysterious missing Safari cursor */
   border: 1px solid transparent;
@@ -26,39 +26,39 @@
   z-index: 1;
 }
 
-.public-DraftEditor-content {
+.react-rte .public-DraftEditor-content {
   outline: none;
   white-space: pre-wrap;
 }
 
-.public-DraftEditor-block {
+.react-rte .public-DraftEditor-block {
   position: relative;
 }
 
-.DraftEditor-alignLeft .public-DraftEditor-block {
+.react-rte .DraftEditor-alignLeft .public-DraftEditor-block {
   text-align: left;
 }
 
-.DraftEditor-alignLeft .public-DraftEditorPlaceholder-root {
+.react-rte .DraftEditor-alignLeft .public-DraftEditorPlaceholder-root {
   left: 0;
   text-align: left;
 }
 
-.DraftEditor-alignCenter .public-DraftEditor-block {
+.react-rte .DraftEditor-alignCenter .public-DraftEditor-block {
   text-align: center;
 }
 
-.DraftEditor-alignCenter .public-DraftEditorPlaceholder-root {
+.react-rte .DraftEditor-alignCenter .public-DraftEditorPlaceholder-root {
   margin: 0 auto;
   text-align: center;
   width: 100%;
 }
 
-.DraftEditor-alignRight .public-DraftEditor-block {
+.react-rte .DraftEditor-alignRight .public-DraftEditor-block {
   text-align: right;
 }
 
-.DraftEditor-alignRight .public-DraftEditorPlaceholder-root {
+.react-rte .DraftEditor-alignRight .public-DraftEditorPlaceholder-root {
   right: 0;
   text-align: right;
 }
@@ -66,38 +66,38 @@
  * @providesModule DraftEditorPlaceholder
  */
 
-.public-DraftEditorPlaceholder-root {
+.react-rte .public-DraftEditorPlaceholder-root {
   color: #9197a3;
   position: absolute;
   z-index: 0;
 }
 
-.public-DraftEditorPlaceholder-hasFocus {
+.react-rte .public-DraftEditorPlaceholder-hasFocus {
   color: #bdc1c9;
 }
 
-.DraftEditorPlaceholder-hidden {
+.react-rte .DraftEditorPlaceholder-hidden {
   display: none;
 }
 /**
  * @providesModule DraftStyleDefault
  */
 
-.public-DraftStyleDefault-block {
+.react-rte .public-DraftStyleDefault-block {
   position: relative;
   white-space: pre-wrap;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-ltr {
+.react-rte .public-DraftStyleDefault-ltr {
   direction: ltr;
   text-align: left;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-rtl {
+.react-rte .public-DraftStyleDefault-rtl {
   direction: rtl;
   text-align: right;
 }
@@ -108,13 +108,13 @@
 
 /* @noflip */
 
-.public-DraftStyleDefault-listLTR {
+.react-rte .public-DraftStyleDefault-listLTR {
   direction: ltr;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-listRTL {
+.react-rte .public-DraftStyleDefault-listRTL {
   direction: rtl;
 }
 
@@ -122,8 +122,8 @@
  * Default spacing for list container elements. Override with CSS as needed.
  */
 
-.public-DraftStyleDefault-ul,
-.public-DraftStyleDefault-ol {
+.react-rte .public-DraftStyleDefault-ul,
+.react-rte .public-DraftStyleDefault-ol {
   margin: 16px 0;
   padding: 0;
 }
@@ -137,61 +137,61 @@
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth0.public-DraftStyleDefault-listLTR {
+.react-rte .public-DraftStyleDefault-depth0.public-DraftStyleDefault-listLTR {
   margin-left: 1.5em;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth0.public-DraftStyleDefault-listRTL {
+.react-rte .public-DraftStyleDefault-depth0.public-DraftStyleDefault-listRTL {
   margin-right: 1.5em;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth1.public-DraftStyleDefault-listLTR {
+.react-rte .public-DraftStyleDefault-depth1.public-DraftStyleDefault-listLTR {
   margin-left: 3em;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth1.public-DraftStyleDefault-listRTL {
+.react-rte .public-DraftStyleDefault-depth1.public-DraftStyleDefault-listRTL {
   margin-right: 3em;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth2.public-DraftStyleDefault-listLTR {
+.react-rte .public-DraftStyleDefault-depth2.public-DraftStyleDefault-listLTR {
   margin-left: 4.5em;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth2.public-DraftStyleDefault-listRTL {
+.react-rte .public-DraftStyleDefault-depth2.public-DraftStyleDefault-listRTL {
   margin-right: 4.5em;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth3.public-DraftStyleDefault-listLTR {
+.react-rte .public-DraftStyleDefault-depth3.public-DraftStyleDefault-listLTR {
   margin-left: 6em;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth3.public-DraftStyleDefault-listRTL {
+.react-rte .public-DraftStyleDefault-depth3.public-DraftStyleDefault-listRTL {
   margin-right: 6em;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth4.public-DraftStyleDefault-listLTR {
+.react-rte .public-DraftStyleDefault-depth4.public-DraftStyleDefault-listLTR {
   margin-left: 7.5em;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-depth4.public-DraftStyleDefault-listRTL {
+.react-rte .public-DraftStyleDefault-depth4.public-DraftStyleDefault-listRTL {
   margin-right: 7.5em;
 }
 
@@ -199,16 +199,16 @@
  * Only use `square` list-style after the first two levels.
  */
 
-.public-DraftStyleDefault-unorderedListItem {
+.react-rte .public-DraftStyleDefault-unorderedListItem {
   list-style-type: square;
   position: relative;
 }
 
-.public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth0 {
+.react-rte .public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth0 {
   list-style-type: disc;
 }
 
-.public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth1 {
+.react-rte .public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth1 {
   list-style-type: circle;
 }
 
@@ -217,14 +217,14 @@
  * purely visual.
  */
 
-.public-DraftStyleDefault-orderedListItem {
+.react-rte .public-DraftStyleDefault-orderedListItem {
   list-style-type: none;
   position: relative;
 }
 
 /* @noflip */
 
-.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listLTR:before {
+.react-rte .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listLTR:before {
   left: -36px;
   position: absolute;
   text-align: right;
@@ -233,7 +233,7 @@
 
 /* @noflip */
 
-.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listRTL:before {
+.react-rte .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listRTL:before {
   position: absolute;
   right: -36px;
   text-align: left;
@@ -246,47 +246,47 @@
  * do so.
  */
 
-.public-DraftStyleDefault-orderedListItem:before {
+.react-rte .public-DraftStyleDefault-orderedListItem:before {
   content: counter(ol0) ". ";
   counter-increment: ol0;
 }
 
-.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth1:before {
+.react-rte .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth1:before {
   content: counter(ol1) ". ";
   counter-increment: ol1;
 }
 
-.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth2:before {
+.react-rte .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth2:before {
   content: counter(ol2) ". ";
   counter-increment: ol2;
 }
 
-.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth3:before {
+.react-rte .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth3:before {
   content: counter(ol3) ". ";
   counter-increment: ol3;
 }
 
-.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth4:before {
+.react-rte .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth4:before {
   content: counter(ol4) ". ";
   counter-increment: ol4;
 }
 
-.public-DraftStyleDefault-depth0.public-DraftStyleDefault-reset {
+.react-rte .public-DraftStyleDefault-depth0.public-DraftStyleDefault-reset {
   counter-reset: ol0;
 }
 
-.public-DraftStyleDefault-depth1.public-DraftStyleDefault-reset {
+.react-rte .public-DraftStyleDefault-depth1.public-DraftStyleDefault-reset {
   counter-reset: ol1;
 }
 
-.public-DraftStyleDefault-depth2.public-DraftStyleDefault-reset {
+.react-rte .public-DraftStyleDefault-depth2.public-DraftStyleDefault-reset {
   counter-reset: ol2;
 }
 
-.public-DraftStyleDefault-depth3.public-DraftStyleDefault-reset {
+.react-rte .public-DraftStyleDefault-depth3.public-DraftStyleDefault-reset {
   counter-reset: ol3;
 }
 
-.public-DraftStyleDefault-depth4.public-DraftStyleDefault-reset {
+.react-rte .public-DraftStyleDefault-depth4.public-DraftStyleDefault-reset {
   counter-reset: ol4;
 }

@@ -120,7 +120,7 @@ export default class RichTextEditor extends Component {
       );
     }
     return (
-      <div className={cx(styles.root, className)} style={rootStyle}>
+      <div className={cx(styles.root, className, 'react-rte')} style={rootStyle}>
         {editorToolbar}
         <div className={combinedEditorClassName} style={editorStyle}>
           <Editor
